@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+
+@layer components {
+
+  /* Main background wrapper */
+  .calc-page {
+    @apply min-h-screen bg-slate-50 flex items-center justify-center p-4 antialiased text-slate-800;
+  }
+
+
+  /* The calculator card container */
+  .calc-card {
+    @apply w-full max-w-sm bg-white rounded-[2rem] shadow-2xl shadow-slate-200 p-8 border border-white;
+  }
+
+
+  .calc-title {
+    @apply text-slate-400 text-xs font-black uppercase tracking-[0.2em] mb-10 text-center;
+  }
+
+
+  /* Input fields */
+  .calc-inputs {
+    @apply flex flex-col gap-4 mb-8;
+  }
+
+
+  .input-field {
+    @apply w-full bg-slate-100 border-2 border-transparent rounded-2xl p-5 text-xl font-semibold focus:bg-white focus:border-blue-500 focus:ring-0 outline-none transition-all placeholder:text-slate-300;
+  }
+
+
+  /* Operation buttons */
+  .calc-grid {
+    @apply grid grid-cols-4 gap-4 mb-10;
+  }
+
+
+  .btn-op {
+    @apply h-14 flex items-center justify-center bg-slate-100 hover:bg-blue-600 hover:text-white text-xl font-bold rounded-2xl transition-all active:scale-90 shadow-sm hover:shadow-blue-200;
+  }
+
+
+  /* Result section */
+  .calc-result {
+    @apply bg-blue-600 rounded-3xl p-6 text-white shadow-lg shadow-blue-100;
+  }
+
+
+  .calc-result label {
+    @apply block text-blue-200 text-[10px] font-bold uppercase tracking-widest mb-1;
+  }
+
+
+  .result-value {
+    @apply text-3xl font-bold truncate;
+  }
+}

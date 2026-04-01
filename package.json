@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "vite": "^8.0.3"
+  },
+  "devDependencies": {
+    "vitest": "^4.1.2"
+  }
+}
